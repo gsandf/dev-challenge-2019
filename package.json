@@ -1,0 +1,13 @@
+{
+  "name": "dev-challenge-2019",
+  "version": "0.1.0",
+  "author": "GS&F Devs <mindreactor@gsandf.com> (https://gsandf.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "mdx-deck": "^1.7.7"
+  },
+  "scripts": {
+    "build": "mdx-deck build presentation.mdx",
+    "start": "mdx-deck presentation.mdx"
+  }
+}
