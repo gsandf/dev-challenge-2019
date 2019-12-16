@@ -1,9 +1,14 @@
 const colors = {
+  black: "#1b0232",
+  blue: "#3685ad",
+  bright: "#7ff",
   cyan: "#b9e0e9",
   orange: "#ceaa8c",
   pink: "#ad3685",
+  red: "#c20028",
+  lightPink: "#fc8394",
   purple: "#04095d",
-  white: "#fff"
+  white: "#fff0ff"
 };
 
 export default {
@@ -13,14 +18,14 @@ export default {
   colors: {
     background: colors.purple,
     code: colors.cyan,
-    codeBackground: colors.purple,
+    codeBackground: colors.black,
     link: colors.cyan,
     pre: colors.cyan,
     preBackground: colors.purple,
     text: colors.white
   },
   css: {
-    backgroundImage: `linear-gradient(45deg, ${colors.purple}, ${colors.pink}, ${colors.orange})`,
+    backgroundImage: `linear-gradient(to top right, ${colors.black}, ${colors.purple}, ${colors.pink}, ${colors.lightPink})`,
     fontSize: "16px",
     textAlign: "center",
     "@media screen and (min-width:64em)": {
