@@ -1,20 +1,18 @@
 import { withSlide } from "mdx-deck";
 import React, { useEffect, useState } from "react";
 
-function GetRekt({ children, slide }) {
-  const [shouldShowChildren, setShouldShowChildren] = useState(false);
+function LightMode({ children, slide }) {
+  const [lightmode, setLightmode] = useState();
 
   useEffect(() => {
-    if (slide.active && !shouldShowChildren) {
-      setTimeout(() => {
-        setShouldShowChildren(true);
-      }, 28000);
+    if (slide.active && !lightmode) {
+      setLightmode(true);
     }
   }, [slide.active]);
 
   return (
-    <div style={{ ...styles.regular, ...(slide.active && styles.darkmode) }}>
-      {shouldShowChildren && children}
+    <div style={{ ...styles.regular, ...(slide.active || styles.darkmode) }}>
+      {children}
     </div>
   );
 }
@@ -33,9 +31,9 @@ const styles = {
     position: "sticky",
     right: 0,
     top: 0,
-    transition: "backdrop-filter 20s",
+    transition: "backdrop-filter 8s",
     width: "100vw"
   }
 };
 
-export default withSlide(GetRekt);
+export default withSlide(LightMode);
