@@ -1,5 +1,7 @@
 # [Dev Challenge 2019](https://dev-challenge-2019.now.sh/)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/gsandf/dev-challenge-2019.svg)](https://greenkeeper.io/)
+
 > The Dev Challenge: a fierce battle for glory and admiration. Will you leave
 > with bragging rights or just show up for some food?
 
