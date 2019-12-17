@@ -1,4 +1,4 @@
-# Dev Challenge 2019
+# [Dev Challenge 2019](https://dev-challenge-2019.now.sh/)
 
 > The Dev Challenge: a fierce battle for glory and admiration. Will you leave
 > with bragging rights or just show up for some food?
