@@ -32,6 +32,9 @@ export default {
       fontSize: "38px"
     }
   },
+  slide: {
+    position: "relative"
+  },
   heading: {
     fontWeight: "300"
   },
